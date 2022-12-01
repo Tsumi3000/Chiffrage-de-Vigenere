@@ -10,7 +10,7 @@ def decode():
     check = True
     while True:
         for i in text:
-            if((ord(i) < 65) or (90 < ord(i) < 97) or (ord(i) > 122)): check = False
+            if i != "\n" and i != " " and ((ord(i) < 65) or (90 < ord(i) < 97) or (ord(i) > 122)): check = False
         if(check): break
         print("The message can only contain letters !")
         text = input("Type your message to decode: ")
@@ -19,7 +19,7 @@ def decode():
     check = True
     while check:
         for i in key:
-            if((ord(i) < 65) or (90 < ord(i) < 97) or (ord(i) > 122)): check = False
+            if i != "\n" and i != " " and ((ord(i) < 65) or (90 < ord(i) < 97) or (ord(i) > 122)): check = False
         if(check): break
         print("The key can only contain letters !")
         key = input("Type the key used to encrypt this message: ")
