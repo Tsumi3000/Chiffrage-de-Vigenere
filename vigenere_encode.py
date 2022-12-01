@@ -6,23 +6,23 @@ def obtainIndex(letter=""):
 def newLetter(letter=0, index=0, add=0): return chr((letter + index)%26 + add)
 
 def encode():
-    text = input("Entrez votre message a encoder: ")
+    text = input("Type your message to decode: ")
     check = True
     while True:
         for i in text:
             if((ord(i) < 65) or (90 < ord(i) < 97) or (ord(i) > 122)): check = False
         if(check): break
-        print("La clé ne peut contenir que des lettres !")
-        text = input("Entrez votre message a encoder: ")
+        print("The message can only contain letters !")
+        text = input("Type your message to decode: ")
 
-    key = input("Entrez la clé utilisée pour chiffer ce message: ")
+    key = input("Type the key used to encrypt this message: ")
     check = True
     while check:
         for i in key:
             if((ord(i) < 65) or (90 < ord(i) < 97) or (ord(i) > 122)): check = False
         if(check): break
-        print("La clé ne peut contenir que des lettres !")
-        key = input("Entrez la clé utilisée pour chiffer ce message: ")
+        print("The key can only contain letters !")
+        key = input("Type the key used to encrypt this message: ")
 
     iter = 0
     newText = ""
@@ -35,9 +35,9 @@ def encode():
             letter, majLetter = obtainIndex(ligne[i])
 
             newletter = newLetter(letter, index, majLetter)
-            if ligne[i] == "\n": newletter = "\n"
+            if (ord(newText[i]) > 65 or 90 < ord(newText[i]) < 97): newletter = newText[i]
             newText+=newletter
 
             iter = (iter + 1)%len(key)
 
-    print("Votre message:", text, "\nEst devenu:", newText)
+    print("Your message:", text, "\nIs become:", newText)

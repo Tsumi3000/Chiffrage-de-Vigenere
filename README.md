@@ -1,5 +1,4 @@
-# Chiffrage de Vigenère
+# Vigenère Cipher
 
-Sous Windows, lancez le jeu en executant "Chiffrage de Vigenère.bat"
-
-Sous Linux, lancez le jeu en executant "Chiffreage de Vigenère.sh"
+ > On Windows, start the game by executing "Vigenère Cipher.bat"
+ > On Linux, start the game by executing "Vigenère Cipher.sh"
