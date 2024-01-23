@@ -1,4 +1,4 @@
-# Vigenère Cipher
+# Vigenere Cipher
 
 - On Windows, start the software by executing "Vigenere Cipher.bat"
 
