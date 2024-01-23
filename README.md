@@ -1,5 +1,5 @@
 # Vigenère Cipher
 
- > On Windows, start the game by executing "Vigenère Cipher.bat"
+- On Windows, start the software by executing "Vigenere Cipher.bat"
 
- > On Linux, start the game by executing "Vigenère Cipher.sh"
+- On Linux, start the software by executing "Vigenere Cipher.sh"
