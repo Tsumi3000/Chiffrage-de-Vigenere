@@ -94,7 +94,7 @@ for i in range(len(message)):
     # If current character is a letter, add the new version and increment iter
     if isLetter:
         newMessage += newLetter(letter,index,isUpper)
-        iter = (iter+1)%(len(key)+1)
+        iter = (iter+1)%len(key)
     
     else:
         newMessage += message[i]
